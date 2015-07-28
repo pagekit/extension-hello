@@ -1,2 +1,2 @@
-# extension-hello
-Hello Extension
+extension-hello
+==============

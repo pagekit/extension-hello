@@ -46,12 +46,10 @@
                 });
             }
 
-        },
-
-        template: __vue_template__
+        }
 
     };
 
-    window.Extensions.component('settings-hello', module.exports);
+    window.Extensions.components['settings-hello'] = module.exports;
 
 </script>
