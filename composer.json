@@ -1,7 +1,6 @@
 {
     "name": "pagekit/hello",
     "type": "pagekit-extension",
-    "version": "0.8.4",
     "title": "Hello",
     "description": "A blueprint to develop your own extensions.",
     "license": "MIT",
