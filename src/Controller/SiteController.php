@@ -25,7 +25,7 @@ class SiteController
 
     /**
      * @Route("/greet")
-     * @Route("/greet/{name}", name="name")
+     * @Route("/greet/{name}", name="greet/name")
      */
     public function greetAction($name = '')
     {
