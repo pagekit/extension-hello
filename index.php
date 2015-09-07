@@ -42,14 +42,14 @@ return [
 
         'hello' => [
             'label' => 'Hello',
-            'icon' => 'extensions/hello/image.svg',
+            'icon' => 'hello:icon.svg',
             'url' => '@hello/admin',
             // 'access' => 'hello: manage hellos'
         ],
 
         'hello: panel' => [
             'label' => 'Hello',
-            'icon' => 'extensions/hello/image.svg',
+            'icon' => 'hello:icon.svg',
             'url' => '@hello/admin',
             'parent' => 'hello'
             // 'access' => 'hello: manage hellos'

@@ -13,6 +13,6 @@
         }
     ],
     "extra": {
-        "image": "image.svg"
+        "icon": "icon.svg"
     }
 }
