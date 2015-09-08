@@ -11,6 +11,11 @@ class HelloController
 {
     public function indexAction()
     {
-        return "TODO";
+        return "Backend View";
+    }
+
+    public function settingsAction()
+    {
+        return "Settings View";
     }
 }
