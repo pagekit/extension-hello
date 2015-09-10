@@ -7,6 +7,16 @@ return [
      */
     'install' => function ($app) {
 
+        $util = $app['db']->getUtility();
+
+        if ($util->tableExists('@hello_greetings') === false) {
+            $util->createTable('@hello_greetings', function ($table) {
+                $table->addColumn('id', 'integer', ['unsigned' => true, 'length' => 10, 'autoincrement' => true]);
+                $table->addColumn('name', 'string', ['length' => 255, 'default' => '']);
+                $table->setPrimaryKey(['id']);
+            });
+        }
+
     },
 
     /*
@@ -22,8 +32,16 @@ return [
      *
      */
     'uninstall' => function ($app) {
+
         // remove the config
         $app['config']->remove('hello');
+
+        $util = $app['db']->getUtility();
+
+        if ($util->tableExists('@hello_greetings')) {
+            $util->dropTable('@hello_greetings');
+        }
+
     },
 
     /*
