@@ -164,6 +164,8 @@ return [
             $scripts->register('hello-settings', 'hello:app/bundle/settings.js', '~extensions');
             $scripts->register('hello-site', 'hello:app/bundle/site.js', '~site-edit');
             $scripts->register('hello-link', 'hello:app/bundle/link.js', '~panel-link');
+            $scripts->register('hello-dashboard', 'hello:app/bundle/dashboard.js', '~dashboard');
+
         }
 
     ]

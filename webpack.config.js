@@ -4,7 +4,8 @@ module.exports = [
         entry: {
             "settings": "./app/components/settings.vue",
             "site": "./app/components/site.vue",
-            "link": "./app/components/link.vue"
+            "link": "./app/components/link.vue",
+            "dashboard": "./app/components/dashboard.vue"
         },
         output: {
             filename: "./app/bundle/[name].js"
