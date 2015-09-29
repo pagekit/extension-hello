@@ -58,10 +58,7 @@ return [
             'label' => 'Hello',
 
             // The controller for this node. Each controller action will be mounted
-            'controller' => 'Pagekit\\Hello\\Controller\\SiteController',
-
-            // Optional: Prevent node from being removed. Will end up in "not linked" menu instead
-            'protected' => true
+            'controller' => 'Pagekit\\Hello\\Controller\\SiteController'
         ]
 
     ],
@@ -162,7 +159,6 @@ return [
 
         'view.scripts' => function ($event, $scripts) {
             $scripts->register('hello-settings', 'hello:app/bundle/settings.js', '~extensions');
-            $scripts->register('hello-site', 'hello:app/bundle/site.js', '~site-edit');
             $scripts->register('hello-link', 'hello:app/bundle/link.js', '~panel-link');
             $scripts->register('hello-dashboard', 'hello:app/bundle/dashboard.js', '~dashboard');
 
