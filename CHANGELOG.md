@@ -4,6 +4,7 @@
 
 ### Added
 - Dashboard Widget
+- Settings screen example
 
 ### Changed
 - Site Tree Node is now protected

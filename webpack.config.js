@@ -2,8 +2,7 @@ module.exports = [
 
     {
         entry: {
-            "settings": "./app/components/settings.vue",
-            "site": "./app/components/site.vue",
+            "settings": "./app/views/settings.js",
             "link": "./app/components/link.vue",
             "dashboard": "./app/components/dashboard.vue"
         },

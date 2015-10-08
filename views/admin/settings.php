@@ -1,4 +1,4 @@
-<?php $view->script('settings', 'hello:assets/js/settings.js', 'vue') ?>
+<?php $view->script('settings', 'hello:app/bundle/settings.js', ['vue', 'jquery']) ?>
 
 <div id="settings" class="uk-form uk-form-horizontal">
 
