@@ -4,7 +4,10 @@
 
 ### Added
 - Dashboard Widget
- 
+
+### Changed
+- Site Tree Node is now protected
+
 ### Removed
 - Unnecessary Vue component for Site node
 

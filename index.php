@@ -58,7 +58,11 @@ return [
             'label' => 'Hello',
 
             // The controller for this node. Each controller action will be mounted
-            'controller' => 'Pagekit\\Hello\\Controller\\SiteController'
+            'controller' => 'Pagekit\\Hello\\Controller\\SiteController',
+
+            // A unique node that cannot be deleted, resides in "Not Linked" by default
+            'protected' => true
+            
         ]
 
     ],
