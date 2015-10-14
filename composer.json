@@ -15,5 +15,8 @@
     "extra": {
         "icon": "icon.svg",
         "scripts": "scripts.php"
+    },
+    "archive": {
+        "exclude": ["node_modules"]
     }
 }
