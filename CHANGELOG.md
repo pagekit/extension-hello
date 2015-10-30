@@ -1,5 +1,10 @@
 # Changelog
 
+## WIP
+
+### Added
+- How to get started explanation (README)
+
 ## 0.9.1 (October 14, 2015)
 
 ### Added
