@@ -1,6 +1,6 @@
 # Changelog
 
-## WIP
+## 0.9.2 (October 30, 2015)
 
 ### Added
 - How to get started explanation (README)
