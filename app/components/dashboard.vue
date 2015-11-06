@@ -8,11 +8,11 @@
             <div class="uk-form-controls">
                 <input id="form-hello-title" class="uk-width-1-1" type="text" name="widget[title]" v-model="widget.title">
             </div>
-        </div>        
+        </div>
 
     </form>
 
-    <div v-if="!editing">
+    <div v-else>
 
         <h3 v-if="widget.title">{{ widget.title }}</h3>
 
@@ -38,7 +38,7 @@
 
         props: ['widget', 'editing']
 
-    }
+    };
 
     window.Dashboard.components['hello'] = module.exports;
 
