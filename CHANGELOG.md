@@ -1,5 +1,10 @@
 # Changelog
 
+## WIP
+
+### Added
+- Proper access check for settings action
+
 ## 0.9.2 (October 30, 2015)
 
 ### Added

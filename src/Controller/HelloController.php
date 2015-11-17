@@ -14,6 +14,9 @@ class HelloController
         return "Backend View";
     }
 
+    /**
+     * @Access("hello: manage settings")
+     */
     public function settingsAction()
     {
         return [
