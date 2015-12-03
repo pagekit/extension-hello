@@ -62,7 +62,7 @@ return [
 
             // A unique node that cannot be deleted, resides in "Not Linked" by default
             'protected' => true
-            
+
         ]
 
     ],
@@ -136,7 +136,7 @@ return [
         // Unique name.
         // Convention: extension name and speaking name of this permission (spaces allowd)
         'hello: manage settings' => [
-            'title' => 'Manage settings'
+            'title' => _('Manage settings')
         ],
 
     ],
