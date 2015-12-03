@@ -136,7 +136,7 @@ return [
         // Unique name.
         // Convention: extension name and speaking name of this permission (spaces allowd)
         'hello: manage settings' => [
-            'title' => _('Manage settings')
+            'title' => 'Manage settings'
         ],
 
     ],
