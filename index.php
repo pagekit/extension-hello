@@ -162,7 +162,6 @@ return [
     'events' => [
 
         'view.scripts' => function ($event, $scripts) {
-            $scripts->register('hello-settings', 'hello:app/bundle/settings.js', '~extensions');
             $scripts->register('hello-link', 'hello:app/bundle/link.js', '~panel-link');
             $scripts->register('hello-dashboard', 'hello:app/bundle/dashboard.js', '~dashboard');
 
