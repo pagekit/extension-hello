@@ -1,5 +1,7 @@
 module.exports = {
 
+    el: '#settings',
+
     data: function () {
         return window.$data;
     },
@@ -18,8 +20,4 @@ module.exports = {
 
 };
 
-$(function () {
-
-    new Vue(module.exports).$mount('#settings');
-
-});
+Vue.ready(module.exports);

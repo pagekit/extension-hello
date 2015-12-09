@@ -1,13 +1,13 @@
 <?php $view->script('settings', 'hello:app/bundle/settings.js', ['vue', 'jquery']) ?>
 
-<div id="settings" class="uk-form uk-form-horizontal">
+<div id="settings" class="uk-form uk-form-horizontal" v-cloak>
 
     <div class="uk-margin uk-flex uk-flex-space-between uk-flex-wrap" data-uk-margin>
         <div data-uk-margin>
             <h2 class="uk-margin-remove">{{ 'Edit Settings' | trans }}</h2>
         </div>
         <div data-uk-margin>
-            <button class="uk-button uk-button-primary" v-on="click: save">{{ 'Save' | trans }}</button>
+            <button class="uk-button uk-button-primary" @click.prevent="save">{{ 'Save' | trans }}</button>
         </div>
     </div>
 
