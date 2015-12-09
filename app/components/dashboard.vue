@@ -40,6 +40,6 @@
 
     };
 
-    window.Dashboard.components['hello'] = module.exports;
+    window.Dashboard.components.hello = module.exports;
 
 </script>
