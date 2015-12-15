@@ -1,9 +1,12 @@
 # Changelog
 
-## WIP
+## 0.10.0
 
 ### Added
 - Proper access check for settings action
+
+### Changed
+- Switched to Vuejs 1.0
 
 ## 0.9.2 (October 30, 2015)
 
