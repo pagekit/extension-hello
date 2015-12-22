@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.10.0
+## 0.10.0 (December 15, 2015)
 
 ### Added
 - Proper access check for settings action
