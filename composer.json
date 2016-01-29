@@ -17,6 +17,6 @@
         "scripts": "scripts.php"
     },
     "archive": {
-        "exclude": ["node_modules"]
+        "exclude": ["node_modules, "!/app"]
     }
 }
