@@ -3,7 +3,7 @@
 ## 0.10.0 (December 15, 2015)
 
 ### Added
-- Proper access check for settings action
+- Adde proper access check for settings action
 
 ### Changed
 - Switched to Vuejs 1.0
@@ -11,13 +11,13 @@
 ## 0.9.2 (October 30, 2015)
 
 ### Added
-- How to get started explanation (README)
+- Added how to get started explanation (README)
 
 ## 0.9.1 (October 14, 2015)
 
 ### Added
-- Dashboard Widget
-- Settings screen example
+- Added dashboard widget
+- Added settings screen example
 
 ### Changed
 - Site Tree Node is now protected
