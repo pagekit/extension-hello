@@ -1,7 +1,7 @@
 {
   "name": "pagekit-hello",
   "scripts": {
-    "archive": "webpack && composer archive --format=zip"
+    "archive": "webpack -p && composer archive --format=zip"
   },
   "devDependencies": {
     "babel-core": "^6.1.2",

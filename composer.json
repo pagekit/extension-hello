@@ -1,7 +1,7 @@
 {
     "name": "pagekit/hello",
     "type": "pagekit-extension",
-    "version": "0.10.0",
+    "version": "1.0.0",
     "title": "Hello",
     "description": "A blueprint to develop your own extensions.",
     "license": "MIT",
@@ -17,6 +17,6 @@
         "scripts": "scripts.php"
     },
     "archive": {
-        "exclude": ["node_modules"]
+        "exclude": ["node_modules, "!/app"]
     }
 }

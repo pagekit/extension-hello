@@ -9,11 +9,12 @@ module.exports = {
     methods: {
 
         save: function () {
-            this.$http.post('admin/system/settings/config', { name: 'hello', config: this.config }, function () {
-                this.$notify('Settings saved.');
-            }).error(function (data) {
-                this.$notify(data, 'danger');
-            });
+            this.$http.post('admin/system/settings/config', {name: 'hello', config: this.config}).then(function () {
+                        this.$notify('Settings saved.');
+                    }, function (data) {
+                        this.$notify(data, 'danger');
+                    }
+                );
         }
 
     }
