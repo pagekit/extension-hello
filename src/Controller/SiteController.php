@@ -12,6 +12,10 @@ class SiteController
      */
     public function indexAction($name = '')
     {
+        if (!App::node()->hasAccess(App::user())) {
+            App::abort(403, __('Insufficient User Rights.'));
+        }
+
         $names = explode(',', $name ?: App::module('hello')->config('default'));
 
         return [
@@ -29,6 +33,10 @@ class SiteController
      */
     public function greetAction($name = '')
     {
+        if (!App::node()->hasAccess(App::user())) {
+            App::abort(403, __('Insufficient User Rights.'));
+        }
+
         $names = explode(',', $name ?: App::module('hello')->config('default'));
 
         return [
