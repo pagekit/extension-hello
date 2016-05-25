@@ -7,36 +7,11 @@ use Pagekit\Application as App;
 class SiteController
 {
     /**
-     * @Route("/")
-     * @Route("/{name}", name="name")
-     */
-    public function indexAction($name = '')
-    {
-        if (!App::node()->hasAccess(App::user())) {
-            App::abort(403, __('Insufficient User Rights.'));
-        }
-
-        $names = explode(',', $name ?: App::module('hello')->config('default'));
-
-        return [
-            '$view' => [
-                'title' => __('Hello %name%', ['%name%' => $names[0]]),
-                'name' => 'hello:views/index.php'
-            ],
-            'names' => $names
-        ];
-    }
-
-    /**
      * @Route("/greet")
      * @Route("/greet/{name}", name="greet/name")
      */
     public function greetAction($name = '')
     {
-        if (!App::node()->hasAccess(App::user())) {
-            App::abort(403, __('Insufficient User Rights.'));
-        }
-
         $names = explode(',', $name ?: App::module('hello')->config('default'));
 
         return [
@@ -60,11 +35,28 @@ class SiteController
 
     public function downloadAction()
     {
-        return App::response()->download('extensions/hello/extension.svg');
+        return App::response()->download(App::locator()->get('hello:icon.svg'));
     }
 
     function forbiddenAction()
     {
         App::abort(401, __('Permission denied.'));
+    }
+
+    /**
+     * @Route("/")
+     * @Route("/{name}", name="name")
+     */
+    public function indexAction($name = '')
+    {
+        $names = explode(',', $name ?: App::module('hello')->config('default'));
+
+        return [
+            '$view' => [
+                'title' => __('Hello %name%', ['%name%' => $names[0]]),
+                'name' => 'hello:views/index.php'
+            ],
+            'names' => $names
+        ];
     }
 }

@@ -2,15 +2,17 @@
 
 ## WIP
 
-### Added
-- Added node access check
+### Fixed
+- Fixed route registration order in SiteController
+- Fixed node access check
+- Fixed download action
 
 ## 1.0.0 (April 13, 2016)
 
 ## 0.10.0 (December 15, 2015)
 
 ### Added
-- Adde proper access check for settings action
+- Added proper access check for settings action
 
 ### Changed
 - Switched to Vuejs 1.0
